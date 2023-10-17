@@ -6,9 +6,8 @@ const loginRouter = require('./allRouters/userLogin');
 const forgotRouter = require('./allRouters/userForgotPassword');
 const resetRouter = require('./allRouters/userReset');
 const userDetailsrouter = require('./allRouters/userDetails');
-const userDetailsDeletedrouter = require('./controllers/userDetailsDeleted');
 const app=express();
-const port= 3000;
+const port= process.env.PORT;
 require('dotenv').config();
 
 loginDetails()
